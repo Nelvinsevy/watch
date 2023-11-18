@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#collection" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COLLECTION</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUTUS</a>
+    
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+
+
+
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+  
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/images/wristwatch-407096_1280.jpg" style="width: 95%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+       <p><b><h2>I must govern the clock, not be governed by it</h2></b></p>    
+    </div>
+  </div>
+
+  
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">MY COLLECTIONS</h2>
+    <p class="w3-opacity"><i>You must be the change you</i></p>
+    <p class="w3-justify">Time plays the most important role in every individual's life. We might not understand the value of time, but it is the most vital thing. If we pass the time idly, we might regret it later. Time is more precious than money, and the value of time is realised only in retrospect.Time plays the most important role in every individual's life. We might not understand the value of time, but it is the most vital thing. If we pass the time idly, we might regret it later. Time is more precious than money, and the value of time is realised only in retrospect.</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>ROLEX</p>
+        <img src="/images/download.jpg" class="margin-bottom" alt="Random Name" style="width:60%">
+        <p><i>since 1930</i></p>
+      </div>
+      <div class="w3-third">
+        <p>FOSSIL</p>
+        <img src="/images/watch-7204672_1280.jpg" class="margin-bottom" alt="Random Name" style="width:70%">
+        <p><i>since 1947</i></p>
+      </div>
+      <div class="w3-third">
+        <p>TITAN</p>
+        <img src="/images/th.jpg" class="margin-bottom" alt="Random Name" style="width:70%">
+        <p><i>since 1950</i></p>
+      </div>
+    </div>
+  </div>
+
+  
+ 
+
+  
+      </header>
+     
+    </div>
+  </div>
+
+ 
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Share your Feed back</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> LULU MALL ,EKM,KERALA<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 943898753<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: lulu@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+</div>
+
+<h4><i>Location Where You Find</i></h4>
+<img src="/images/download (1).jpg" class="w3-image w3-greyscale-min"style="width:100%">
+
+
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <h6>FOLLOWS US ON......!</h6>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram hover-opacity"></i>
+  <i class="fa fa-snapchat hover-opacity"></i>
+  <i class="fa fa-pinterest-p hover-opacity"></i>
+  <i class="fa fa-twitter hover-opacity"></i>
+  
+  
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
